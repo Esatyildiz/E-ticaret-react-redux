@@ -7,3 +7,34 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+.paginate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginate li {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px solid rgb(159, 159, 159);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.paginate li:hover {
+    background-color: #e53649;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.paginate li.selected {
+    background-color: #e53649;
+    border: 1px solid #fff;
+    color: #fff;
+}
