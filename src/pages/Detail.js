@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import DetailComp from '../components/Detail/DetailComp';
-import Loading from '../components/Loading';
+import DetailComp from '../components/Detail/DetailComp.js';
+import Loading from '../components/Loading.js';
 import { getDetailProduct } from '../redux/productSlice';
 
 const Detail = () => {

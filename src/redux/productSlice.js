@@ -5,7 +5,7 @@ const initialState = {
     products: [],
     productStatus: STATUS.IDLE,
     productDetail: [],
-    productsDetailStatus: STATUS.IDLE
+    productsDetailStatus: STATUS.IDLE,
 }
 
 export const getProducts = createAsyncThunk('getproducts', async () => {
@@ -47,7 +47,7 @@ const productSlice = createSlice({
             })
             .addCase(getDetailProduct.fulfilled, (state, action) => {
                 state.productsDetailStatus = STATUS.SUCCESS;
-                state.productsDetail = action.payload
+                state.productDetail = action.payload
             })
             .addCase(getDetailProduct.rejected, (state, action) => {
                 state.productsDetailStatus = STATUS.FAIL
@@ -66,6 +66,9 @@ const productSlice = createSlice({
 })
 
 export default productSlice.reducer
+
+
+
 
 
 
