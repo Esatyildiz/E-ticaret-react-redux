@@ -42,6 +42,7 @@ const productSlice = createSlice({
             .addCase(getProducts.rejected, (state, action) => {
                 state.productStatus = STATUS.FAIL
             })
+            //  getDetailProduct
             .addCase(getDetailProduct.pending, (state, action) => {
                 state.productsDetailStatus = STATUS.LOADING
             })
@@ -52,6 +53,8 @@ const productSlice = createSlice({
             .addCase(getDetailProduct.rejected, (state, action) => {
                 state.productsDetailStatus = STATUS.FAIL
             })
+
+            // end  getDetailProduct
             .addCase(getCategoryProducts.pending, (state, action) => {
                 state.productStatus = STATUS.LOADING
             })
